@@ -1,0 +1,135 @@
+@font-face {
+    font-family: "Myriad";
+    src: url('MyriadPro-Regular.otf') format('opentype');
+}
+    
+@font-face{
+     font-family: "Myriad";
+     font-weight: bold;
+     src: url('MyriadPro-Bold.otf') format('opentype');
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    background: linear-gradient(335deg, rgba(0,0,0,1) 0%, rgba(21,21,147,1) 50%, rgba(167,42,42,1) 100%);
+    margin: 0px;
+	padding: 0px;
+    font-family: "Myriad", sans-serif;
+    color: white;
+}
+
+#bingoContainer{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    height: 98vh;
+    width: 98vh;
+
+    font-size: 2.5vh;
+
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.bingoRow{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    overflow: hidden;
+}
+
+.bingoBox{
+    width: 100%;
+    border: 4px solid black;
+    border-radius: 8px;
+    user-select: none;
+    margin: 2px;
+    padding: 8px;
+
+    overflow: hidden;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 100ms linear;
+
+    color: transparent;
+}
+
+.bingoBox:hover{
+    border: 6px solid black;
+    margin: 0px;
+    transition: 100ms linear;
+}
+
+#toggleContainer{
+    position: fixed;
+    height: 6vh;
+    width: 10vh;
+    left: 3vh;
+    bottom: 3vh;
+
+    border: 4px solid black;
+    border-radius: 6vh;
+
+    display: flex;
+    align-items: center;
+}
+
+#toggleBall{
+    height: 5vh;
+    width: 5vh;
+
+    border: 5px solid black;
+    border-radius: 6vh;
+}
+
+#clear{
+    position: fixed;
+    right: 3vh;
+    bottom: 1vh;
+
+    font-size: 8vh;
+    color: rgba(0,0,0,0.5);
+    user-select: none;
+    transition: 500ms;
+}
+
+#clear:hover{
+    color: white;
+    transition: 500ms;
+}
+
+#clear:active{
+    color: red;
+    transition: 100ms;
+}
+
+#download{
+    position: fixed;
+    right: 12vh;
+    bottom: 1vh;
+
+    font-size: 8vh;
+    color: rgba(0,0,0,0.5);
+    user-select: none;
+    transition: 500ms;
+    text-decoration: none;
+}
+
+#download:hover{
+    color: white;
+    transition: 500ms;
+}
+
+#download:active{
+    color: green;
+    transition: 100ms;
+}
